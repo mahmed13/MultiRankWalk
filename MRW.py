@@ -14,10 +14,9 @@ def save_data(filepath, Y):
     np.savetxt(filepath, Y, fmt = "%d")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description = "Assignment 4",
-        epilog = "CSCI 4360/6360 Data Science II: Fall 2017",
+    parser = argparse.ArgumentParser(description = "MRW",
         add_help = "How to use",
-        prog = "python assignment4.py -i <input-data> -o <output-file> [optional args]")
+        prog = "python MRW.py -i <input-data> -o <output-file> [optional args]")
 
     # Required args.
     parser.add_argument("-i", "--infile", required = True,
